@@ -1,5 +1,7 @@
 <script>  
   // import {routes} from '../metadata'
+
+  console.log(routes)
   
   export let title
 </script>
@@ -12,7 +14,8 @@
   <ul>
     <!-- {#each routes as route}
       <li>
-        <a href={route.path}>{route.label}</a>
+        {route.path}
+        <a href={route.label}>{route.label}</a>
       </li>
     {/each} -->
   </ul>

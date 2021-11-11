@@ -11,6 +11,14 @@ collections:
       - name: nav_label
       - name: body
         widget: markdown
+  - name: blogs
+    label: blogs
+    folder: src/blogs
+    create: true
+    fields:
+      - name: title
+      - name: body
+        widget: markdown
 media_folder: "static/uploads"
 public_folder: "/uploads"
 

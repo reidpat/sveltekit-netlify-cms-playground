@@ -5,7 +5,7 @@ const routes = []
 for (const file in modules) {
   if (Object.hasOwnProperty.call(modules, file)) {
     const module = modules[file]
-    const path = file.replace('./routes/','/').replace('index','').replace('.md','')
+    const path = file.replace('./routes/','/').replace('index','').replace('.md','').replace('./src','').toLowerCase()
     routes.push({
       path, ...module.metadata
     })
